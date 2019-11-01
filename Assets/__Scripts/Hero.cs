@@ -38,7 +38,7 @@ public class Hero : MonoBehaviour {
         {
             Debug.LogError("Hero.Awake() - Attempted to assign second Hero.S!");
         }
-        fireDelegate += TempFire;
+        //fireDelegate += TempFire;
 
         // Reset the weapons to start _Hero with 1 blaster
         ClearWeapons();
@@ -81,7 +81,7 @@ public class Hero : MonoBehaviour {
 
 
     //TODO: replace or comment out later
-    void TempFire()
+    /*void TempFire()
     {                                                      
         GameObject projGO = Instantiate<GameObject>(projectilePrefab);
 
@@ -94,7 +94,7 @@ public class Hero : MonoBehaviour {
         float tSpeed = Main.GetWeaponDefinition(proj.type).velocity;
         rigidB.velocity = Vector3.up * tSpeed;
     }
-
+    */
 
     private void OnTriggerEnter(Collider other)
     {
